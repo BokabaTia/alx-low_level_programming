@@ -20,7 +20,7 @@ void more_numbers(void)
 		while (a <= '>')
 		{
 
-			isMore = (a >= ':' && a <= '>') ? 1 : 0;
+			isMore = a >= ':' && a <= '>';
 
 			_putchar(isMore ? '1' : a);
 
