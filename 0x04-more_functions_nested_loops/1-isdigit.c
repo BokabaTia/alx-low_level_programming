@@ -6,9 +6,9 @@
  * Return: Either 1 or 0 depending on the integer 'c'
  */
 
-int _isdigit(char c)
+int _isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }

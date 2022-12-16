@@ -15,6 +15,6 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int);
 int _isupper(char);
-int _isdigit(char);
+int _isdigit(int);
 
 #endif
