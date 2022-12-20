@@ -28,13 +28,11 @@ void rev_string(char *str)
 	int len = strSize(str) - 1;
 	int idx = 0;
 
-	printf("%d show me the size", len);
-
 	
-	while (len)
+	while (*str)
 	{
 		*(str + idx) = *(str + len--);
-		printf("%c", *(str +idx));
+		/**printf("%c", *(str +idx));**/
 		idx++;
 	}
 }
