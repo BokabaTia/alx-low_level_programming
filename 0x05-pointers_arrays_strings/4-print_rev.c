@@ -25,9 +25,9 @@ int strSize(char *str)
 **/
 void print_rev(char *str)
 {
-	int len = strSize(str);
+	int len = strSize(str) - 1;
 
-	while (len > -1)
+	while (len >= 0)
 	{
 		_putchar(str[len--]);
 	}
