@@ -29,10 +29,12 @@ void rev_string(char *str)
 	int idx = 0;
 
 	
-	while (*str)
+	while (len)
 	{
-		*(str + idx) = *(str + len--);
-		/**printf("%c", *(str +idx));**/
+		char temp = *(str + idx);
+		*(str + idx) = *(str + len);
+		*(str + len) = temp;
 		idx++;
+		len--;
 	}
 }
