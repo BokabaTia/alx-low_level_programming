@@ -27,7 +27,7 @@ void rev_string(char *str)
 {
 	int len = strSize(str) - 1;
 	int idx = 0;
-	int swaps = len / 2;
+	int swaps = len / 2 + 1;
 
 	while (idx != swaps)
 	{
