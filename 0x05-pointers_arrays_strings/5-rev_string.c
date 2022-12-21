@@ -28,12 +28,12 @@ void rev_string(char *str)
 	int len = strSize(str) - 1;
 	int idx = 0;
 
-	while (idx != len)
+	while (idx + (len % 2 == 1 ? 1 : 0) != len)
 	{
-		char temp = str[idx];
+		char temp = *(str + idx);
 
-		str[idx] = str[len];
-		str[len] = temp;
+		*(str + idx) = *(str + len);
+		*(str + len) = temp;
 		idx++;
 		len--;
 	}
