@@ -1,17 +1,16 @@
+#include <stddef.h>
 /**
- * array_iterator - execute a function on array's element
- *  @array: array
+ * array_iterator - executes the function passed as a parameter
+ *  @array: contains a list of numbers
  *  @size: size of the array
  *  @action: function to execute
- *  Return: nothing
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i = 0;
 
-	if (array && action)
+	while (i < size)
 	{
-		for (; i < size; i++)
-			action(array[i]);
+		action(array[i]);
 	}
 }
