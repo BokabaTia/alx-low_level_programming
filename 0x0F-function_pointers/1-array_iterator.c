@@ -1,9 +1,5 @@
 #include "function_pointers.h"
-<<<<<<< HEAD
-#include <stddef.h>
-=======
 #include <stdio.h>
->>>>>>> 3b0de39eecd9d5ddd29ad5c28c0a3542958b6e99
 
 /**
  * array_iterator - is a function that executes a pointer function
